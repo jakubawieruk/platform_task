@@ -5,7 +5,7 @@ FROM rocker/shiny
 RUN mkdir /home/shiny-app
 
 # Install R dependencies
-RUN R -e "install.packages(c('dplyr', 'ggplot2', 'gapminder'))"
+RUN R -e "install.packages(c('shiny'))"
 
 # Copy the Shiny app code
 COPY app.R /home/shiny-app/app.R

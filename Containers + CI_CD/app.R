@@ -1,5 +1,8 @@
 library(shiny)
 
+options(shiny.host = "0.0.0.0")
+options(shiny.port = 8180)
+
 # Define UI for app that draws a histogram ----
 ui <- fluidPage(
 
