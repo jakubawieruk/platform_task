@@ -23,7 +23,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./Containers_CI_CD
-          file: ./Dockerfile
+          file: .Containers_CI_CD/Dockerfile
           push: true
           tags: jawieruk/platform_task:latest
